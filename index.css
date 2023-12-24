@@ -105,6 +105,44 @@ a{
     margin: 8px;
 }
 
+@media all and (max-width: 1000px){
+    .login{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .head{
+        margin-top: 50px;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .subhead{
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        display: flex;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        flex-direction: column;
+        height: 350px;
+        width: 60%;
+        box-shadow: 5px 10px 8px #888888;
+    }
+    .login-title{
+        font-size: 25px;
+        font-weight: bolder;
+        left:20px;
+        color:#0866ff;
+    }
+    h3{
+        left:5px;
+    }
+    .head p{
+        margin:0;
+        font-size: 15px;
+    }
+}
+
 /* Signup css*/
 
 .container{
@@ -133,6 +171,16 @@ a{
     border-bottom: 2px solid #ccc;
     display: flex;
     justify-content: space-between;
+}
+.login-btn{
+    position: relative;
+    right:25px;
+    top:5px;
+    border: 0;
+}
+.login-btn:hover{
+    font-size: 20px;
+    color:red;
 }
 .signup-title{
     margin-bottom:3px ;
