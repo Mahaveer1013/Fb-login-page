@@ -113,6 +113,7 @@ a{
 }
 .signup{
     position: absolute;
+    display: none;
     top: 10px; /* Adjust this value as needed */
     left: 50%; /* Adjust this value as needed */
     transform: translateX(-50%);
@@ -130,6 +131,8 @@ a{
     margin-top: 8px;
     margin-left: 16px;
     border-bottom: 2px solid #ccc;
+    display: flex;
+    justify-content: space-between;
 }
 .signup-title{
     margin-bottom:3px ;
@@ -205,6 +208,6 @@ a{
 .signup-popup{
     display:block;
 }
-.login{
-    opacity: 0.2;
+.login-popup{
+    /*opacity: 0.2;*/
 }

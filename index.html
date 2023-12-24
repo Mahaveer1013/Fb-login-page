@@ -9,10 +9,15 @@
 </head>
 <body>
 <div class="container">
-    <div class="signup">
+    <div class="signup" id="signup">
         <div class="signup-head">
-            <h1 class="signup-title">Sign Up</h1>
-            <p>It's quick and easy</p>
+            <div class="content">
+                <h1 class="signup-title">Sign Up</h1>
+                <p>It's quick and easy</p>
+            </div>
+            <div class="close-btn">
+                <button class="login-btn" onclick="closeSignup()">X</button>
+            </div>
         </div>
         <div class="input-field">
             <div class="half-width">
@@ -51,7 +56,7 @@
         </div>
     </div>
 
-    <div class="login">
+    <div class="login" id="login">
         <div class="head">
 	        <h1 class="login-title">Social Website</h1>
             <p>Social Website helps you connect <br>and share with the people in your life.</p>
@@ -79,5 +84,6 @@
         </div>
     </div>
 </div>
+<script src="signup.js"></script>
 </body>
 </html>
