@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="container">
+    <div class="signup">
+        <div class="signup-head">
+            <h1 class="signup-title">Sign Up</h1>
+            <p>It's quick and easy</p>
+        </div>
+        <div class="input-field">
+            <div class="half-width">
+                <input type="text" class="firstname" placeholder="First name">
+                <input type="text" class="surname" placeholder="Surname">
+            </div>
+            <div class="full-width">
+                <input type="text" class="new-email" placeholder="Email">
+                <input type="text" class="new-password" placeholder="New Password">
+            </div>
+            <div class="dob-div">
+                <label class="dob-label">Date of birth</label>
+                <input type="date" class="date">                
+            </div>
+            <div class="gender-div">
+                <label class="gender-label">Gender</label>
+                <div class="quad-width">
+                    <div class="radio-btn">
+                        <label for="" class="female-btn">Female </label>
+                        <input type="radio" class="radio-input">
+                    </div>
+                    <div class="radio-btn">
+                        <label for="" class="male-btn">male </label>
+                        <input type="radio" class="radio-input">
+                    </div>
+                    <div class="radio-btn">
+                        <label for="" class="custom-btn">Custom </label>
+                        <input type="radio" class="radio-input">
+                    </div>
+                </div>               
+            </div>
+            <p class="terms">By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS notifications from us and can opt out at any time.</p>
+            <div class="signup-submit">
+                <input type="submit" value="Sign Up" class="signup-submit-btn">
+            </div>
+        </div>
+    </div>
+
+    <div class="login">
+        <div class="head">
+	        <h1 class="login-title">Social Website</h1>
+            <p>Social Website helps you connect <br>and share with the people in your life.</p>
+        </div>
+        <div class="subhead">
+            <form method="post" action="/user_login">
+                <div class="details">
+                    <div class="email">
+                        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+                    </div>
+                    <div class="password">
+                        <input type="password" placeholder="Enter Password" name="password" id="password" required>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Log in" class="login-submit-btn">
+                    </div>
+                    <div class="f-password">
+                        <a href="">Forgotten password?</a>
+                    </div>
+                </div>
+            </form>
+            <div class="signup-btn-div">
+                <button class="signup-btn" onclick="openSignup()">Create new account</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
